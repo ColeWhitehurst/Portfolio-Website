@@ -4,7 +4,7 @@ export const projects = [
     title: "GBA Emulator",
     description: "A full-featured GameBoy Advance emulator written in ES6.",
     tech: ["JavaScript", "Canvas", "Web Audio API"],
-    image: "../../public/GBA.png",
+    image: "../../dist/GBA.png",
     github: "https://github.com/ColeWhitehurst/GBA-Emulator",
   },
   {
@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A simulation of what its like to be the manager of a top European team transferring players in and out to build your ultimate team.",
     tech: ["React", "Postgresql", "Restful API"],
-    image: "../../public/transfer.png",
+    image: "../../dist/transfer.png",
     github: "https://github.com/ColeWhitehurst/Transfer-Market",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
     description:
       "A task manager created by utilizing controllers and services in the backend and implementing RTK Query client-side.",
     tech: ["RTK Query", "GraphQL", "Controllers"],
-    image: "../../public/task.png",
+    image: "../../dist/task.png",
     github: "https://github.com/ColeWhitehurst/Task-Manager",
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     description:
       "Foundra helps hiring teams find the candidate they’ve spent too much time searching for.",
     tech: ["AWS S3 Buckets", "WebSockets", "React Media Recorder"],
-    image: "../../public/foundra.png",
+    image: "../../dist/foundra.png",
     github: "https://github.com/ColeWhitehurst/Capstone-Foundra",
     site: "https://www.foundra.app"
   },
