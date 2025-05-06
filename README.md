@@ -1,6 +1,7 @@
 # Portfolio-Website
 
-📁 Project Overview
+## 📁 Project Overview
+
 This portfolio website is a single-page application built to highlight:
 
 About Me: A brief introduction and background.
@@ -11,7 +12,8 @@ Skills: Technologies and tools I am proficient in.
 
 Contact: A form to get in touch with me directly.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
+
 Framework: React.js
 
 Styling: CSS3 with responsive design principles
