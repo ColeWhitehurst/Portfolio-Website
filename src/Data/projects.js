@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "gba-emulator",
     title: "GBA Emulator",
-    description: "A full-featured GameBoy Advance emulator written in ES6.",
+    description: "A full-featured GameBoy Advance emulator written by refactoring the codebase using ES6 standards from a previously built es5 project.",
     tech: ["JavaScript", "Canvas", "Web Audio API"],
     image: "/GBA.png",
     github: "https://github.com/ColeWhitehurst/GBA-Emulator",
