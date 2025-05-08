@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../Data/projects";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
+import {motion} from 'framer-motion';
 import "./SingleProject.css";
 
 const SingleProject = () => {
@@ -18,7 +19,11 @@ const SingleProject = () => {
     );
   }
 
-  const { title, description, tech, image, github, site } = project;
+  const index = projects.findIndex((p) => p.id === id);
+  const prev = projects[index - 1];
+  const next = projects[index + 1];
+
+  const { title, description2, tech, image, github, site } = project;
 
   return (
     <div className="single-project-container">
@@ -26,11 +31,15 @@ const SingleProject = () => {
         <FaArrowLeft /> Back to Projects
       </Link>
 
-      <h2 className="project-title">{title}</h2>
-
-      <img src={image} alt={title} className="project-image" />
-
-      <p className="project-description">{description}</p>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h2 className="project-title">{title}</h2>
+        <img src={image} alt={title} className="project-image" />
+        <p className="project-description">{description2}</p>
+      </motion.div>
 
       <ul className="project-tech">
         {tech.map((t) => (
@@ -47,6 +56,10 @@ const SingleProject = () => {
             <FaExternalLinkAlt size={20} /> Live Site
           </a>
         )}
+      </div>
+      <div className="project-navigation">
+        {prev && <Link to={`/projects/${prev.id}`}>← {prev.title}</Link>}
+        {next && <Link to={`/projects/${next.id}`}>{next.title} →</Link>}
       </div>
     </div>
   );

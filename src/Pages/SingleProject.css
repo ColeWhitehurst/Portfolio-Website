@@ -74,3 +74,30 @@
 .project-links a:hover {
   color: #00f6ff;
 }
+
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.project-navigation a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-navigation a:hover {
+  color: #00f6ff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .project-navigation {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
